@@ -1,4 +1,4 @@
-{% set version = "0.2.3" %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/reactable_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/reactable/reactable_{{ version }}.tar.gz
-  sha256: fd665a5d8d0c86cf98bb57fea0f5d795adca8fdc2651c8067e1954ba5839949f
+  sha256: 38e4d49a235f6900e6d7dcb33245c925860edf0b3eb443c78ee0330b6a0c304d
 
 build:
   merge_build_host: true  # [win]
