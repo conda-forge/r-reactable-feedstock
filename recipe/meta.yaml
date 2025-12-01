@@ -1,4 +1,4 @@
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/reactable_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/reactable/reactable_{{ version }}.tar.gz
-  sha256: b4aae6be2dd85aaa5226067415e501abc139e99499bc62c539630eeafdaf6af2
+  sha256: 6bdd74fb37561de32500f7e855003ced9533f4e61f4026752c204f430c10cd36
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
